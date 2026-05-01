@@ -98,7 +98,7 @@ section img{
     }
 
     h1{
-        font-size: 35px;
+        font-size: 40px;
         
         
     }
@@ -106,7 +106,7 @@ section img{
     p{
         font-size:20px ;
         width: 340px;
-        margin: 24px 0 0 40px ;
+       
     }
 
     a{
@@ -118,6 +118,6 @@ section img{
     section img{
         width: 340px;
         height: 230px;
-        margin: 40px 0 0 43px ;
+        
     }
 }
