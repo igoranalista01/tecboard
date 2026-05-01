@@ -1,61 +1,64 @@
-
 /*Definição de fontes*/
 @font-face {
     font-family: "Unbounded";
-    src: url("../fonts/Unbounded-Bold.ttf")
-    format("truetype");
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
     font-weight: 700;
-    font-size: normal;
+    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf")
-    format("truetype");
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
     font-weight: 400;
-    font-size: normal; 
+    font-style: normal;
     font-display: swap;
 }
 
 /*Reset*/
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Estilo Desktop*/
-body{
+body {
     background-color: #000000;
     color: #ffffff;
 }
-header img{
+
+header img {
     display: block;
-    margin: 75px 0 0 360px;
+    margin: 75px auto 0;
+    max-width: 100%;
+    height: auto;
 }
 
-h1{
+h1 {
     font-size: 80px;
-    font-family: "Unbounded",sans-serif;
+    font-family: "Unbounded", sans-serif;
     text-align: center;
     margin: 60px auto;
+    padding: 0 20px;
 }
 
-h1 span{
-    color: #9747ff ;
+h1 span {
+    color: #9747ff;
 }
 
-p{
-    font-family: "Poppins",sans-serif;
+p {
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
     text-align: center;
     margin: 24px auto 0;
-    width: 792px;  
+    width: 792px;
+    padding: 0 20px;
 }
 
-a{
+a {
     color: #FFFFFF;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     text-decoration: none;
     background-color: #9747ff;
@@ -65,59 +68,59 @@ a{
     text-align: center;
     line-height: 66px;
     border-radius: 36px;
-    margin: 40px auto   
+    margin: 40px auto;
 }
 
-a:hover{
+a:hover {
     background-color: #5f4e74;
-} 
+}
 
-
-section img{
+section img {
     display: block;
     width: 792px;
     height: 446px;
     margin: 0 auto;
 }
 
-@media(max-width: 768px){
-
-    header img{
-        margin:65px 0 0 60px;
+@media (max-width: 768px) {
+    header img {
+        margin: 65px auto 0;
     }
 
-    p{
-        width:648px
+    p {
+        width: 648px;
     }
-}    
+}
 
-@media(max-width: 1179px){
-
-    header img{
-        margin:32px 0 0 16px;
+@media (max-width: 375px) {
+    header img {
+        margin: 32px auto 0;
+        width: 90%;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
-        
-        
+        margin: 30px auto;
     }
 
-    p{
-        font-size:20px ;
-        width: 340px;
-       
-    }
-
-    a{
+    p {
         font-size: 20px;
-        width:251px 
-        
+        width: 100%;
+        max-width: 340px;
+        margin: 24px auto 0;
     }
 
-    section img{
-        width: 340px;
-        height: 230px;
-        
+    a {
+        font-size: 20px;
+        width: 251px;
+        height: 56px;
+        line-height: 56px;
+    }
+
+    section img {
+        width: 90%;
+        max-width: 340px;
+        height: auto;
+        margin: 0 auto;
     }
 }
